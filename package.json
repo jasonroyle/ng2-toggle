@@ -1,0 +1,37 @@
+{
+  "name": "ng2-toggle",
+  "version": "0.0.1",
+  "description": "Toggle for Angular 2",
+  "main": "ng2-toggle.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "prepublish": "typings install && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonroyle/ng2-toggle.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "ng2",
+    "toggle",
+    "show",
+    "hide"
+  ],
+  "author": "jasonroyle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonroyle/ng2-toggle/issues"
+  },
+  "homepage": "https://github.com/jasonroyle/ng2-toggle#readme",
+  "devDependencies": {
+    "es6-shim": "0.35.1",
+    "typescript": "1.8.10",
+    "typings": "1.3.2"
+  },
+  "peerDependencies": {
+    "@angular/core": "2.0.0-rc.4"
+  },
+  "typings": "./ng2-toggle.d.ts"
+}
