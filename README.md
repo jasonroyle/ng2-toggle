@@ -1,5 +1,7 @@
 # Toggle for Angular 2
 
+[Demo](https://plnkr.co/edit/St8h9QiMgoLINyNwZELj?p=preview)
+
 Toggle between the toggle component and the toggle directive.
 
 ```ts
