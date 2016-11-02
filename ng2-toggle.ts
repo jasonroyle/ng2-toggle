@@ -11,15 +11,11 @@ import {
   `
 })
 export class ToggleComponent {
-  on: boolean;
-  change: EventEmitter<boolean>;
-  constructor() {
-    this.change = new EventEmitter<boolean>();
-    this.on = false;
-  }
+  on = false;
+  change = new EventEmitter<boolean>();
   toggle() {
     this.on = !this.on;
-    this.change.emit(!this.on);
+    this.change.emit(this.on);
   }
 }
 
@@ -30,8 +26,8 @@ export class ToggleDirective {
   @Input() set toggle(toggle: ToggleComponent) {
     if (!toggle.on) this.show();
     toggle.change.subscribe(on => {
-      if (on) this.show();
-      else this.hide();
+      if (on) this.hide();
+      else this.show();
     });
   }
   constructor(
